@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #96b9d0;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+button:hover {
+  background-color: #5494d4;
+}
+
+p {
+  font-weight: 300;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+nav .logo {
+  margin-right: 30px;
+}
+
+nav .logo a {
+  color: #96b9d0;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+nav .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+nav .about a {
+  color: #5494d4;
+}
+
+.modal-section {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  height: 75px;
+}
+
+.modal-section button {
+  margin: 0px 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal .modal-content {
+  background-color: white;
+  border-radius: 15px;
+  width: 30%;
+  min-width: 300px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-content #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+}
+
+.modal .modal-content #form input {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #96b9d0;
+}
+
+.modal .modal-content #form input:focus {
+  outline: 3px solid skyblue;
+}
+
+.modal .modal-content h2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal .modal-content h2 span {
+  font-size: 0.7em;
+  color: gray;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+.modal .modal-content h2 span:hover {
+  color: red;
+}
+
+.modal .modal-content .form-item {
+  margin: 10px;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote p {
+  font-weight: 300;
+}
+
+.quote p span {
+  font-weight: bold;
+}
+
+.book-section {
+  margin-top: 50px;
+  height: 100%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-section .book-section-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 980px) {
+  .book-section .book-section-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.book-section .book-section-grid .book {
+  border: 2px solid #96b9d0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #96b9d0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #96b9d0), color-stop(79%, #5494d4));
+  background: linear-gradient(180deg, #96b9d0 27%, #5494d4 79%);
+  -webkit-box-shadow: 3px 4px 8px 0px #a3a3a3;
+  box-shadow: 3px 4px 8px 0px #a3a3a3;
+}
+
+.book-section .book-section-grid .book .details {
+  margin-bottom: 10px;
+}
+
+.book-section .book-section-grid .book .details h3 {
+  color: white;
+}
+
+.book-section .book-section-grid .book .details p {
+  margin: 15px;
+  color: white;
+}
+
+.book-section .book-section-grid .book .book-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.book-section .book-section-grid .book .book-buttons #readButs {
+  background-color: #77dd77;
+}
+
+.book-section .book-section-grid .book .book-buttons #notYet {
+  background-color: #ff6961;
+}
+
+.book-section .book-section-grid .book .book-buttons #delBut {
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.book-section .book-section-grid .book .book-buttons #delBut:hover {
+  background-color: #ff6961;
+}
+
+.book-section .book-section-grid .book .book-buttons button {
+  cursor: pointer;
+}
+
+.book-section .book-section-grid .book .book-buttons button:hover {
+  background-color: #96b9d0;
+}
+
+.about-content {
+  margin-top: 100px;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.about-content h1,
+.about-content h3 {
+  color: #ff6961;
+}
+
+.about-content a {
+  color: #77dd77;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+.book-section {
+  margin-top: 50px;
+
+  height: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  .book-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    @media screen and(min-width: 980px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .book {
+      border: 2px solid $mainColor;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      background: rgb(150, 185, 208);
+      background: linear-gradient(
+        180deg,
+        rgba(150, 185, 208, 1) 27%,
+        rgba(84, 148, 212, 1) 79%
+      );
+
+      -webkit-box-shadow: 3px 4px 8px 0px rgba(163, 163, 163, 1);
+      -moz-box-shadow: 3px 4px 8px 0px rgba(163, 163, 163, 1);
+      box-shadow: 3px 4px 8px 0px rgba(163, 163, 163, 1);
+
+      .details {
+        margin-bottom: 10px;
+
+        h3 {
+          color: white;
+        }
+        p {
+          margin: 15px;
+          color: white;
+        }
+      }
+
+      .book-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        #readButs {
+          background-color: #77dd77;
+        }
+
+        #notYet {
+          background-color: #ff6961;
+        }
+
+        #delBut {
+          transition: background-color 300ms;
+          &:hover {
+            background-color: #ff6961;
+          }
+        }
+
+        button {
+          cursor: pointer;
+
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

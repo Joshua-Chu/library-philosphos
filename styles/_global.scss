@@ -1,0 +1,40 @@
+$mainColor: #96b9d0;
+$secondaryColor: #5494d4;
+$fontFamily: "Roboto", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+  //border: 2px solid red;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: $mainColor;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}
+
+p {
+  font-weight: 300;
+}

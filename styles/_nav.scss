@@ -1,0 +1,26 @@
+nav {
+  //border: 1px solid red;
+  display: flex;
+  padding: 30px;
+
+  .logo {
+    margin-right: 30px;
+
+    a {
+      color: $mainColor;
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+    a {
+      color: $secondaryColor;
+    }
+  }
+}

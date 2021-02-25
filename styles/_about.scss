@@ -1,0 +1,17 @@
+.about-content {
+  margin-top: 100px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+  h1,
+  h3 {
+    color: #ff6961;
+  }
+
+  a {
+    color: #77dd77;
+  }
+}
